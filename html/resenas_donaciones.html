@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reseñas y Donaciones</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/navbar.js" defer></script> 
+</head>
+<body>
+<div id="navbar"></div> 
+  <header>
+    <h1>Reseñas y Donaciones</h1>
+  </header>
+
+  <main class="contenedor">
+    <section>
+      <h2>Lo que dicen nuestros clientes</h2>
+      <article class="testimonial">
+       <img src="../reseñasimg/clienteFemenino.png" alt="Maria">
+
+        <blockquote>“El detalle perfecto para mi aniversario. ¡Hermoso trabajo!” – <strong>Maria F.</strong></blockquote>
+      </article>
+      <article class="testimonial">
+        <img src="../reseñasimg/clienteMasculino.png" alt="Rodrigo">
+        <blockquote>“Los regalos corporativos encantaron a nuestros clientes.” – <strong>Rodrigo T.</strong></blockquote>
+      </article>
+    </section>
+
+    <section>
+      <h2>Haz una Donación</h2>
+      <form id="donationForm" action="#" method="POST" novalidate>
+        <div class="grupo-formulario">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required autocomplete="name" />
+        </div>
+        <div class="grupo-formulario">
+          <label for="monto">Monto (Lempiras):</label>
+          <input type="number" id="monto" name="monto" min="1" required />
+        </div>
+        <button type="submit">Donar Ahora</button>
+        <p id="mensajeDonacion" role="alert" style="margin-top: 1rem; color: green; font-weight: bold;"></p>
+      </form>
+    </section>
+  </main>
+   <script src="../js/carrusel.js" defer></script>
+  <script src="../js/validaciones.js" defer></script>
+    <footer>
+      <p>&copy; 2025 Gift Mall Honduras · Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

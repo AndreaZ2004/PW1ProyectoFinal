@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preguntas Frecuentes </title>
+  <script src="../js/navbar.js" defer></script> 
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<div id="navbar"></div> 
+
+  <header>
+    <h1>Preguntas Frecuentes</h1>
+  </header>
+
+  <main class="contenedor">
+    <section>
+      <h2>¿Tienes dudas? Aquí las resolvemos</h2>
+
+      <div class="faq-item">
+        <h3>¿Cómo puedo hacer una donación?</h3>
+        <div class="faq-respuesta">Puedes donar a través del formulario en la sección "Reseñas y Donaciones", eligiendo un monto y completando tu nombre.</div>
+      </div>
+
+      <div class="faq-item">
+        <h3>¿Mi donación es deducible de impuestos?</h3>
+        <div class="faq-respuesta">Sí, todas las donaciones que realizas a través de Palancon son deducibles. Recibirás un comprobante automáticamente.</div>
+      </div>
+
+      <div class="faq-item">
+        <h3>¿Dónde se usan los fondos donados?</h3>
+        <div class="faq-respuesta">Tus donaciones se destinan directamente a los programas sociales que apoyamos, incluyendo alimentación, educación y salud.</div>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+
+    <footer>
+      <p>&copy; 2025 Gift Mall Honduras · Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

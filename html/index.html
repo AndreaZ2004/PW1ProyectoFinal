@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio | Gift Mall HN</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/navbar.js" defer></script>
+</head>
+<body>
+<div id="navbar"></div>
+
+  <header>
+    <h1>BIENVENIDOS A GIFTMALLHN</h1>
+    <p>MOMENTOS ÚNICOS, REGALOS PERFECTOS</p>
+  </header>
+
+<section class="carousel" id="carousel">
+  <img src="../carrusel/botella.jpg" class="carousel-img active" alt="Regalo con botella" />
+  <img src="../carrusel/gorra.png" class="carousel-img" alt="Regalo con gorra" />
+  <img src="../carrusel/rosa.jpg" class="carousel-img" alt="Ramo de flores" />
+  <img src="../carrusel/cafe.jpg" class="carousel-img" alt="Kit de café" />
+  <img src="../carrusel/ramo.jpg" class="carousel-img" alt="Ramo de rosas" />
+  <img src="../carrusel/serigrafia.jpg" class="carousel-img" alt="Kit personalizado" />
+  <div class="carousel-controls">
+    <button class="prev" onclick="prevSlide()">⬅</button>
+    <button class="next" onclick="nextSlide()">➡</button>
+  </div>
+  <div class="carousel-dots"></div>
+</section>
+
+  <section class="galeria">
+    <h2>Galería de Productos</h2>
+    <div class="imagenes-grid">
+      <div class="galeria-card"><img src="../carrusel/cafe.jpg" alt="Kit de café" /></div>
+      <div class="galeria-card"><img src="../carrusel/ramo.jpg" alt="Ramo de rosas" /></div>
+      <div class="galeria-card"><img src="../carrusel/serigrafia.jpg" alt="Kit personalizado" /></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Mensaje de la Fundadora</h2>
+    <blockquote>
+      "Nuestro objetivo es crear momentos que se conviertan en recuerdos inolvidables. Gracias por confiar en nosotros."
+    </blockquote>
+  </section>
+
+  <section>
+    <h2>Próximo Evento</h2>
+    <div class="faq">
+      <strong>🎉 Evento Especial:</strong><br>
+      Lanzamiento de la nueva colección – 15 de agosto en Tegucigalpa.<br>
+      ¡Sorpresas, regalos y mucho más!
+    </div>
+  </section>
+      <footer>
+      <p>&copy; 2025 Gift Mall Honduras · Todos los derechos reservados</p>
+    </footer>
+  <script src="carrusel.js"></script>
+</body>
+</html>
